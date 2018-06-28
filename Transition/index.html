@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Transition</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="banner">
+        <div class="title">TRANSITION</div>
+        <p>------ Designed by JinmingOu on June 28the. -----</p>
+    </div>
+    <main>
+        <div class="icon_row">
+            <img src="./assets/Icons/1.png" alt="正在加载图片">
+            <img src="./assets/Icons/2.png" alt="正在加载图片">
+            <img src="./assets/Icons/3.png" alt="正在加载图片">
+            <img src="./assets/Icons/4.png" alt="正在加载图片">
+            <img src="./assets/Icons/5.png" alt="正在加载图片">
+        </div>
+        <div class="icon_row">
+            <img src="./assets/Icons/6.png" alt="正在加载图片">
+            <img src="./assets/Icons/7.png" alt="正在加载图片">
+            <img src="./assets/Icons/8.png" alt="正在加载图片">
+            <img src="./assets/Icons/9.png" alt="正在加载图片">
+            <img src="./assets/Icons/10.png" alt="正在加载图片">
+        </div>
+        <div class="icon_row">
+            <img src="./assets/Icons/11.png" alt="正在加载图片">
+            <img src="./assets/Icons/12.png" alt="正在加载图片">
+            <img src="./assets/Icons/13.png" alt="正在加载图片">
+            <img src="./assets/Icons/14.png" alt="正在加载图片">
+            <img src="./assets/Icons/15.png" alt="正在加载图片">
+        </div>
+        <div class="icon_row">
+            <img src="./assets/Icons/16.png" alt="正在加载图片">
+            <img src="./assets/Icons/17.png" alt="正在加载图片">
+            <img src="./assets/Icons/18.png" alt="正在加载图片">
+            <img src="./assets/Icons/19.png" alt="正在加载图片">
+            <img src="./assets/Icons/8.png" alt="正在加载图片">
+        </div>
+    </main>
+    <footer>
+        <button class="primary_btn" id="btn">查看全部</button>
+    </footer>
+    <div class="bottom"></div>
+</body>
+<script>
+    var btn = document.getElementById('btn')
+    btn.addEventListener('click', function() {
+        var main = document.getElementsByTagName('main');
+        if (btn.innerHTML === '收起') {
+            main[0].className = 'transition_slide_up';
+            btn.innerHTML = '查看全部';
+        } else {
+            main[0].className = 'transition_slide_down';
+            btn.innerHTML = '收起';
+        }
+    })
+
+</script>
+</html>

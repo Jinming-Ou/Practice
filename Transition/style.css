@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+    min-width: 500px;
+}
+
+.banner {
+    height: 450px;
+    background-image: url('./assets/trianglify.png');
+    background-size: cover;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 33px;
+}
+
+.banner p {
+    font-size: 16px;
+    margin-top: 12px;
+    font-style: italic;
+}
+
+.title {
+    font-size: 44px;
+    height: 63px;
+}
+
+/* .title_show {
+    transition: font-size 2s;
+} */
+
+main {
+    height: 270px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+main img {
+    box-sizing: border-box;
+    width: 66px;
+    height: 66px;
+    padding: 6px;
+}
+
+main img:hover {
+    border: 3px dashed #ea986c;
+    /* transform: rotate(360deg);
+    transition: transform 2s; */
+}
+
+.transition_slide_down {
+    height: 500px;
+    transition: height 0.15s;
+    -moz-transition: height 0.15s; 
+    -webkit-transition: height 0.15s;
+    -o-transition: height 0.15s;
+}
+
+.transition_slide_up {
+    height: 270px;
+    transition: height 0.15s;
+    -moz-transition: height 0.15s; 
+    -webkit-transition: height 0.15s;
+    -o-transition: height 0.15s;
+    transition: height 0.15s;
+}
+
+.icon_row {
+    display: flex;
+    justify-content: space-around;
+    margin: 47px;
+}
+
+footer {
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 30px;
+}
+
+.primary_btn {
+    border: 1px solid #8A8A8A;
+    font-size: 15px;
+    color: #8A8A8A;
+    height: 35px;
+    width: 115px;
+    font-weight: 400;
+}
+
+.primary_btn:hover {
+    cursor: pointer;
+    color: #EA986C;
+    border: 1px solid #EA986C;
+}
+
+.primary_btn:focus {
+    outline: none;
+}
+
+.bottom {
+    border-bottom: 5px solid #E25B3D;
+    position: relative;
+    bottom: 0;
+}
