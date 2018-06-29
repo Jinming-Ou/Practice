@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sketchpad</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./animate.css">
+</head>
+<body>
+    <header id="title">Sketchpad</header>
+    <p class="describe">You can choose <span>tools,shapes,size</span> and <span>colors</span></p>
+    <hr style="margin:0px;border:1px dashed #708090">
+    <main class="content">
+        <nav class="animated bounceInLeft">
+            <h3>Tool</h3>
+            <div>
+                <svg onclick="brush(0)" id="brush" class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-qianbi"></use>
+                </svg>
+                <svg onclick="eraser(1)" id="eraser" class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-xiangpica"></use>
+                </svg>
+                <svg onclick="paint(2)" id="paint" class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-youqishua"></use>
+                </svg>
+                <svg onclick="text(3)" id="text" class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-ziti"></use>
+                </svg>
+                <svg onclick="magnifier(4)" id="magnifier" class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-fangdajing"></use>
+                </svg>
+                <svg onclick="straw(5)" id="straw" class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-shiwu-xiguan"></use>
+                </svg>
+            </div>
+            <h3>Shape</h3>
+            <div class="shape_content">
+                <svg onclick="line(6)" id="line" class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-jian"></use>
+                </svg>
+                <svg onclick="arc(7)" id="arc" class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-yuanxingweixuanzhong"></use>
+                </svg>
+                <svg onclick="arcFill(8)" id="arcFill" class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-circle"></use>
+                </svg>
+                
+                <svg onclick="rect(9)" id="rect" class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-fangkuang"></use>
+                </svg>
+                <svg onclick="rectFill(10)" id="rectFill"  class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-zhengfangxing"></use>
+                </svg>
+                <svg onclick="poly(11)" id="poly" class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-triangle"></use>
+                </svg>
+            </div>
+            <h3>Size</h3>
+            <div class="size_content">
+                <div onclick="setWidth(0)" id="width_1" class="line_thin"></div>
+                <div onclick="setWidth(1)" id="width_3" class="line_normal"></div>
+                <div onclick="setWidth(2)" id="width_5" class="line_thick"></div>
+                <div onclick="setWidth(3)" id="width_8" class="line_thicker"></div>
+            </div>
+            <h3>Color</h3>
+            <div class="color_content">
+                <div id="Crimson" onclick="setColor(this,0)"></div>
+                <div id="Orange" onclick="setColor(this,1)"></div>
+                <div id="Yellow" onclick="setColor(this,2)"></div>
+                <div id="LimeGreen" onclick="setColor(this,3)"></div>
+                <div id="PaleGreen" onclick="setColor(this,4)"></div>
+                <div id="RoyalBlue" onclick="setColor(this,5)"></div>
+            </div>
+            <h3>Image</h3>
+            <button onclick="clearAll()" id="clear" type="button" class="primary_button">清除画布</button>
+        </nav>
+        <canvas id="canvas" width="780" height="456" class="canvas_panel animated pulse">
+            您的浏览器不支持canvas标签，请升级浏览器
+        </canvas>
+        <script src="bootbox.min.js"></script>
+        <script src="canvas.js"></script>
+    </main>
+<script src="http://at.alicdn.com/t/font_551804_bqw7zvtphwwxw29.js"></script>
+
+</body>
+</html>
