@@ -1,0 +1,158 @@
+.icon {
+    width: 1.6em; height: 1.6em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+ }
+
+body {
+    background-color: rgb(42,43,48);
+    margin: 0;
+    padding: 35px 70px 10px 70px;
+}
+
+h3 {
+    color: white;
+    margin-top: 20px;
+}
+
+#title {
+    color: white;
+    font-size: 35px;
+    font-weight: 800;
+}
+
+.describe {
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.describe span {
+    color: #5c5edc
+}
+
+.content {
+    display: flex;
+    margin-top: 30px;
+}
+
+/* ========== shape ================ */
+.shape_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.square_solid {
+    width:18px;
+    height: 18px;
+    border: 1px solid white;
+    background-color: white;
+    display: inline-block;
+}
+
+.square {
+    width: 18px;
+    height: 18px;
+    border: 1px solid white;
+    display: inline-block;
+}
+
+/* =========== size ============= */
+.size_content {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    width: 180px;
+    height: 55px;
+}
+
+.line_thin, .line_normal, .line_thick, .line_thicker {
+    width: 180px;
+    background-color: white;
+    border: 1px solid white;
+}
+
+.line_thin {
+    height: 1px;
+}
+
+.line_normal {
+    height: 3px;
+}
+
+.line_thick {
+    height: 5px;
+}
+
+.line_thicker {
+    height: 7px;
+}
+
+/* =========== color ============= */
+.color_content {
+    width: 180px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-around;
+}
+.color_content > div {
+    width: 14px;
+    height: 14px;
+    border: 2px solid transparent;
+}
+.color_content :first-child {
+    background-color: Crimson;
+}
+.color_content :nth-child(2) {
+    background-color: Orange;
+}
+.color_content :nth-child(3) {
+    background-color: Yellow;
+}
+.color_content :nth-child(4) {
+    background-color: LimeGreen;
+}
+.color_content :nth-child(5) {
+    background-color: PaleGreen;
+}
+.color_content :nth-child(6) {
+    background-color: RoyalBlue;
+}
+
+/* ========== image ============ */
+.primary_button {
+    border: 1px solid white;
+    width: 180px;
+    height: 30px;
+    background-color: transparent;
+    color: white;
+}
+
+.primary_button:hover {
+    background-color: white;
+    color: rgb(42,43,48)
+}
+
+.primary_button:focus {
+    outline: white solid 1px;
+}
+
+
+/* ========== canvas =========== */
+.canvas_panel {
+    margin-left: 80px;
+    margin-top: 23px;
+
+}
+
+#canvas {
+    background: white;
+    box-shadow: 0 0 33px rgb(42,43,48) inset
+}
+
+#canvas:hover {
+    cursor:crosshair;
+}
