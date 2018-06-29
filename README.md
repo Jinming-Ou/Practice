@@ -9,3 +9,9 @@
 使用 Animation 等属性写了一个立体线框球形动画特效...链接地址：https://jinming-ou.github.io/Practice/RotatingBall/
 
 ![image](https://jinming-ou.github.io/Practice/Img-folder/jinming-ou.github.io_RotatingBall_.png)
+
+## Practice_3 Canvas
+使用 Canvas 建了一个画板。实现了简单的线条、图形、颜色、粗细的画板功能。  
+链接地址：https://jinming-ou.github.io/Practice/Sketchpad/
+
+![image](https://jinming-ou.github.io/Practice/Img-folder/jinming-ou.github.io_Sketchpad_.png)
