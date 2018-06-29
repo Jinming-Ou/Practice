@@ -1,0 +1,150 @@
+body {
+  background: black
+}
+
+.ball-box {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  margin: -150px 0 0 -150px;
+  perspective: 3000px; /*以摄像头类似的功能，距离子元素3000px;子元素透视的属性*/
+  perspective-origin: 50% 50%;
+}
+
+.ball {
+  height: 100%;
+  width: 100%;
+  transform-style: preserve-3d;
+  -webkit-animation: rotate3d 30s infinite linear
+}
+
+/*字元素以3d呈现*/
+.ball:after {
+  content: '';
+  width: 2px;
+  height: 500px;
+  display: block;
+  position: absolute;
+  background: #B4EEB4;
+  top: 0;
+  left: 0;
+  transform: translateX(150px) translateY(-100px);
+}
+
+.ball > div {
+  border: 2px solid white;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+  width: 100%
+}
+
+.ball .line_1 {
+  transform: rotateY(0)
+}
+
+.ball .line_2 {
+  transform: rotateY(36deg)
+}
+
+.ball .line_3 {
+  transform: rotateY(60deg)
+}
+
+.ball .line_4 {
+  transform: rotateY(80deg)
+}
+
+.ball .line_5 {
+  transform: rotateY(120deg)
+}
+
+@-webkit-keyframes rotate3d {
+  0% {
+    transform: rotateZ(-30deg) rotateY(0)
+  }
+  100% {
+    transform: rotateZ(-30deg) rotateY(360deg)
+  }
+}
+
+.note {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  margin: -150px 0 0 -300px
+}
+
+.note .title {
+  color: #B4EEB4
+}
+.note .msg{
+    color: white;
+    margin-left: -20px;
+    line-height: 30px
+}
+.note .hoverMe{
+    color: white!important;
+}
+.note a{
+    color: white;
+    text-decoration: none
+}
+
+.note a::before{
+    content:'[';
+    margin-right: 10px;
+    opacity: 0;
+    transform: translateX(20px); 
+    display: inline-block;  /*这个属性很重要*/
+}
+
+.note a::after{
+    content:']';
+    margin-left: 10px;
+    opacity: 0;
+    transform: translateX(-20px); 
+    display: inline-block;
+}
+
+.note a:hover::before{
+    content:'[';
+    color: white;
+    margin-right: 10px;
+    opacity: 1;
+    transform: translateX(20px)
+}
+.note a:hover::after{
+    content:']';
+    color: white; 
+    margin-left: 10px;
+    opacity: 1;
+}
+
+.note a:hover::before, 
+.note a:hover::after, 
+.note a:focus::before, 
+.note a:focus::after {
+    opacity: 1;
+    -webkit-transform: translateX(0px); 
+    transform: translateX(0px);
+}
+.note a:hover::before,
+.note a:hover::after{
+    transition: transform 1s, opacity 0.2s;
+}
+
+
+
+
+
+
+
+
+
+
+
