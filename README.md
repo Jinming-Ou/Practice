@@ -15,3 +15,10 @@
 链接地址：https://jinming-ou.github.io/Practice/Sketchpad/
 
 ![image](https://jinming-ou.github.io/Practice/Img-folder/jinming-ou.github.io_Sketchpad_.png)
+
+
+## Practice_4 Component/CountDown
+写了一个倒计时组件，具体展示的是距离当日24:00:00的倒计时。   
+链接地址：https://jinming-ou.github.io/Practice/Component/CountDown/
+
+![image](https://jinming-ou.github.io/Practice/Img-folder/jinming-ou.github.io_Practice_Component_CountDown_.png)
