@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CountDown</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section>
+        <aside>
+            <p class="auxiliary">Today 's Time Remaining</p>
+            <p class="statement">
+                Get your<br/>
+                Times of<br/>
+                Count Down<br/>
+                Now
+            </p>
+            <div>
+                <input type="text" id="input">
+                <img src="./assets/air.png" class="air_icon" onclick="countDown()">
+            </div>
+        </aside>
+        <main>
+            <div class="countdown">Exhibition</div>
+            <button class="end_btn" onclick="endup()">END</button>
+            <a target="_blank" href="http://note.youdao.com/noteshare?id=fa285e66bf4260f8c67e1f3be07882e2">
+                <img src="./assets/link.png" class="link_icon">Here is note-reading
+            </a>
+        </main>
+    </section>
+</body>
+
+<script>
+    (function() {
+        var _date = new Date(new Date().toLocaleDateString()).getTime() + 24 * 60 * 60 * 1000;
+        var year = new Date(_date).getFullYear();
+        var month = new Date(_date).getMonth() + 1;
+        var day = new Date(_date).getDate();
+        var hour = new Date(_date).getHours();
+        var minute = new Date(_date).getMinutes();
+        var second = new Date(_date).getSeconds();
+        document.getElementById('input').value = year + '-' + format(month) + '-' + format(day) + ' ' + format(hour) + ':' + format(minute) + ':' + format(second);
+    })()
+    function format(value) {
+        if(value < 10) {
+            return '0' + value;
+        } else {
+            return value;
+        }
+    }
+</script>
+<script src="./index.js"></script>
+</html>
