@@ -22,3 +22,10 @@
 链接地址：https://jinming-ou.github.io/Practice/Component/CountDown/
 
 ![image](https://jinming-ou.github.io/Practice/Img-folder/jinming-ou.github.io_Practice_Component_CountDown_.png)
+
+## Practice_5 Slicing
+在Dribbble上看到一个喜欢的动画图～ 侵删侵删
+原图地址：https://dribbble.com/shots/5209009-Paint-Roller
+链接地址：https://jinming-ou.github.io/Practice/PaintRoller/
+
+![image](https://jinming-ou.github.io/Practice/Img-folder/jinming-ou.github.io_PaintRoller_.png)
