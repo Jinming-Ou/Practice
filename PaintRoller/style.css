@@ -65,14 +65,9 @@ body {
     top: 9px;
 }
 .handle {
-/*	width: 30px;*/
-/*	height: 55px;*/
-/*	background-color: #16C0FC;*/
-/*	border: 5px solid #2D3E5F;*/
 	position: relative;
 	left: 55px;
 	top: 8px;
-/*	border-radius: 10px;*/
 }
 .handle-top {
 	font-size: 0;
@@ -210,16 +205,15 @@ body {
 .clean-first {
 	width: 20px;
 	height: 20px;
-	/* animation: colored 3s infinite; */
+	animation: colored 3s infinite;
 }
 .clean-second {
 	width: 16px;
 	height: 20px;
-	/* animation: colored 3s infinite; */
+	animation: colored 3s infinite;
 }
-/*============*/
 .brush {
-	/* animation: brush 3s linear infinite; */
+	animation: brush 3s linear infinite;
 }
 @keyframes brush {
 	0% {
